@@ -1,93 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<repository
-  name="TLA Scripts"
-  url="https://github.com/Enigma-IX/Reaper-WorkflowScripts">
-  <index version="1" commit="87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a">
-    <category name="Generators">
-      <reapack name="TLA - Random One-Shot Ambience Generator.lua" type="script" desc="Random Ambience Generator by Duration &amp; Population">
-        <version name="1.0" author="Loris Tessier" time="2025-12-08T15:49:26Z">
-          <changelog><![CDATA[+ Initial Release]]></changelog>
-          <source main="main">https://github.com/Enigma-IX/Reaper-WorkflowScripts/raw/87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a/Generators/TLA%20-%20Random%20One-Shot%20Ambience%20Generator.lua</source>
-        </version>
-      </reapack>
-    </category>
-    <category name="Items Workflow">
-      <reapack name="TLA - Apply random pitch in range to selected items.lua" type="script" desc="Apply random pitch in cents to selected items">
-        <version name="1.0" author="Loris Tessier" time="2025-12-08T15:49:26Z">
-          <changelog><![CDATA[+ Initial Release]]></changelog>
-          <source main="main">https://github.com/Enigma-IX/Reaper-WorkflowScripts/raw/87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a/Items%20Workflow/TLA%20-%20Apply%20random%20pitch%20in%20range%20to%20selected%20items.lua</source>
-        </version>
-      </reapack>
-      <reapack name="TLA - Fade int or out selected items by X seconds.lua" type="script" desc="Apply fade-in and fade-out to selected items">
-        <version name="1.0" author="Loris Tessier" time="2025-12-08T15:49:26Z">
-          <changelog><![CDATA[+ Initial Release]]></changelog>
-          <source main="main">https://github.com/Enigma-IX/Reaper-WorkflowScripts/raw/87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a/Items%20Workflow/TLA%20-%20Fade%20int%20or%20out%20selected%20items%20by%20X%20seconds.lua</source>
-        </version>
-      </reapack>
-      <reapack name="TLA - Render selected items as new takes, VST, Panning, Volumes.lua" type="script" desc="Render selected items with their track's FX, volume, and pan settings,">
-        <version name="1.0" author="Loris Tessier" time="2025-12-08T15:49:26Z">
-          <changelog><![CDATA[+ Initial Release]]></changelog>
-          <source main="main">https://github.com/Enigma-IX/Reaper-WorkflowScripts/raw/87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a/Items%20Workflow/TLA%20-%20Render%20selected%20items%20as%20new%20takes,%20VST,%20Panning,%20Volumes.lua</source>
-        </version>
-      </reapack>
-      <reapack name="TLA - Seamless Loop (Split Reverse Crossfade).lua" type="script" desc="Create a seamless loop with Split-Reverse Crossfade (with Offset)">
-        <version name="1.0" author="Loris Tessier" time="2025-12-08T15:49:26Z">
-          <changelog><![CDATA[+ Initial Release]]></changelog>
-          <source main="main">https://github.com/Enigma-IX/Reaper-WorkflowScripts/raw/87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a/Items%20Workflow/TLA%20-%20Seamless%20Loop%20(Split%20Reverse%20Crossfade).lua</source>
-        </version>
-      </reapack>
-      <reapack name="TLA - Space selected items by X seconds.lua" type="script" desc="Space selected items by X seconds">
-        <version name="1.0" author="Loris Tessier" time="2025-12-08T15:49:26Z">
-          <changelog><![CDATA[+ Initial Release]]></changelog>
-          <source main="main">https://github.com/Enigma-IX/Reaper-WorkflowScripts/raw/87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a/Items%20Workflow/TLA%20-%20Space%20selected%20items%20by%20X%20seconds.lua</source>
-        </version>
-      </reapack>
-      <reapack name="TLA - Space selected items on X seconds rate.lua" type="script" desc="Space selected items on X seconds rate">
-        <version name="1.0" author="Loris Tessier" time="2025-12-08T15:49:26Z">
-          <changelog><![CDATA[+ Initial Release]]></changelog>
-          <source main="main">https://github.com/Enigma-IX/Reaper-WorkflowScripts/raw/87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a/Items%20Workflow/TLA%20-%20Space%20selected%20items%20on%20X%20seconds%20rate.lua</source>
-        </version>
-      </reapack>
-      <reapack name="TLA - Swap selected items randomly.lua" type="script" desc="Swap selected items randomly">
-        <version name="1.0" author="Loris Tessier" time="2025-12-08T15:49:26Z">
-          <changelog><![CDATA[+ Initial Release]]></changelog>
-          <source main="main">https://github.com/Enigma-IX/Reaper-WorkflowScripts/raw/87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a/Items%20Workflow/TLA%20-%20Swap%20selected%20items%20randomly.lua</source>
-        </version>
-      </reapack>
-    </category>
-    <category name="Regions Workflow">
-      <reapack name="TLA - Adapt view to current region.lua" type="script" desc="Adapt view to current region">
-        <version name="1.0" author="Loris Tessier" time="2025-12-08T15:49:26Z">
-          <changelog><![CDATA[+ Initial Release]]></changelog>
-          <source main="main">https://github.com/Enigma-IX/Reaper-WorkflowScripts/raw/87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a/Regions%20Workflow/TLA%20-%20Adapt%20view%20to%20current%20region.lua</source>
-        </version>
-      </reapack>
-      <reapack name="TLA - Snap selected items to start of containing region.lua" type="script" desc="Snap selected items to start of containing region">
-        <version name="1.0" author="Loris Tessier" time="2025-12-08T15:49:26Z">
-          <changelog><![CDATA[+ Initial Release]]></changelog>
-          <source main="main">https://github.com/Enigma-IX/Reaper-WorkflowScripts/raw/87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a/Regions%20Workflow/TLA%20-%20Snap%20selected%20items%20to%20start%20of%20containing%20region.lua</source>
-        </version>
-      </reapack>
-    </category>
-    <category name="Tracks Workflow">
-      <reapack name="TLA - Create a Child Track to selected Track.lua" type="script" desc="Create a single child Track for selected Tracks">
-        <version name="1.0" author="Loris Tessier" time="2025-12-08T15:49:26Z">
-          <changelog><![CDATA[+ Initial Release]]></changelog>
-          <source main="main">https://github.com/Enigma-IX/Reaper-WorkflowScripts/raw/87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a/Tracks%20Workflow/TLA%20-%20Create%20a%20Child%20Track%20to%20selected%20Track.lua</source>
-        </version>
-      </reapack>
-      <reapack name="TLA - Create a Parent Track for selected Tracks.lua" type="script" desc="Create a single parent Track for selected Tracks">
-        <version name="1.0" author="Loris Tessier" time="2025-12-08T15:49:26Z">
-          <changelog><![CDATA[+ Initial Release]]></changelog>
-          <source main="main">https://github.com/Enigma-IX/Reaper-WorkflowScripts/raw/87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a/Tracks%20Workflow/TLA%20-%20Create%20a%20Parent%20Track%20for%20selected%20Tracks.lua</source>
-        </version>
-      </reapack>
-      <reapack name="TLA - Move and align selected items into subtracks.lua" type="script" desc="Move selected items into subtracks, aligned to first item's position per parent track">
-        <version name="1.0" author="Loris Tessier" time="2025-12-08T15:49:26Z">
-          <changelog><![CDATA[+ Initial Release]]></changelog>
-          <source main="main">https://github.com/Enigma-IX/Reaper-WorkflowScripts/raw/87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a/Tracks%20Workflow/TLA%20-%20Move%20and%20align%20selected%20items%20into%20subtracks.lua</source>
-        </version>
-      </reapack>
-    </category>
-  </index>
-</repository>
+<index version="1" commit="87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a" name="TLA Tools">
+  <category name="Generators">
+    <reapack name="TLA - Random One-Shot Ambience Generator.lua" type="script" desc="Random Ambience Generator by Duration &amp; Population">
+      <version name="1.0" author="Loris Tessier" time="2025-12-08T15:49:26Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="main">https://github.com/Enigma-IX/Reaper-WorkflowScripts/raw/87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a/Generators/TLA%20-%20Random%20One-Shot%20Ambience%20Generator.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Items Workflow">
+    <reapack name="TLA - Apply random pitch in range to selected items.lua" type="script" desc="Apply random pitch in cents to selected items">
+      <version name="1.0" author="Loris Tessier" time="2025-12-08T15:49:26Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="main">https://github.com/Enigma-IX/Reaper-WorkflowScripts/raw/87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a/Items%20Workflow/TLA%20-%20Apply%20random%20pitch%20in%20range%20to%20selected%20items.lua</source>
+      </version>
+    </reapack>
+    <reapack name="TLA - Fade int or out selected items by X seconds.lua" type="script" desc="Apply fade-in and fade-out to selected items">
+      <version name="1.0" author="Loris Tessier" time="2025-12-08T15:49:26Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="main">https://github.com/Enigma-IX/Reaper-WorkflowScripts/raw/87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a/Items%20Workflow/TLA%20-%20Fade%20int%20or%20out%20selected%20items%20by%20X%20seconds.lua</source>
+      </version>
+    </reapack>
+    <reapack name="TLA - Render selected items as new takes, VST, Panning, Volumes.lua" type="script" desc="Render selected items with their track's FX, volume, and pan settings,">
+      <version name="1.0" author="Loris Tessier" time="2025-12-08T15:49:26Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="main">https://github.com/Enigma-IX/Reaper-WorkflowScripts/raw/87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a/Items%20Workflow/TLA%20-%20Render%20selected%20items%20as%20new%20takes,%20VST,%20Panning,%20Volumes.lua</source>
+      </version>
+    </reapack>
+    <reapack name="TLA - Seamless Loop (Split Reverse Crossfade).lua" type="script" desc="Create a seamless loop with Split-Reverse Crossfade (with Offset)">
+      <version name="1.0" author="Loris Tessier" time="2025-12-08T15:49:26Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="main">https://github.com/Enigma-IX/Reaper-WorkflowScripts/raw/87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a/Items%20Workflow/TLA%20-%20Seamless%20Loop%20(Split%20Reverse%20Crossfade).lua</source>
+      </version>
+    </reapack>
+    <reapack name="TLA - Space selected items by X seconds.lua" type="script" desc="Space selected items by X seconds">
+      <version name="1.0" author="Loris Tessier" time="2025-12-08T15:49:26Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="main">https://github.com/Enigma-IX/Reaper-WorkflowScripts/raw/87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a/Items%20Workflow/TLA%20-%20Space%20selected%20items%20by%20X%20seconds.lua</source>
+      </version>
+    </reapack>
+    <reapack name="TLA - Space selected items on X seconds rate.lua" type="script" desc="Space selected items on X seconds rate">
+      <version name="1.0" author="Loris Tessier" time="2025-12-08T15:49:26Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="main">https://github.com/Enigma-IX/Reaper-WorkflowScripts/raw/87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a/Items%20Workflow/TLA%20-%20Space%20selected%20items%20on%20X%20seconds%20rate.lua</source>
+      </version>
+    </reapack>
+    <reapack name="TLA - Swap selected items randomly.lua" type="script" desc="Swap selected items randomly">
+      <version name="1.0" author="Loris Tessier" time="2025-12-08T15:49:26Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="main">https://github.com/Enigma-IX/Reaper-WorkflowScripts/raw/87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a/Items%20Workflow/TLA%20-%20Swap%20selected%20items%20randomly.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Regions Workflow">
+    <reapack name="TLA - Adapt view to current region.lua" type="script" desc="Adapt view to current region">
+      <version name="1.0" author="Loris Tessier" time="2025-12-08T15:49:26Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="main">https://github.com/Enigma-IX/Reaper-WorkflowScripts/raw/87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a/Regions%20Workflow/TLA%20-%20Adapt%20view%20to%20current%20region.lua</source>
+      </version>
+    </reapack>
+    <reapack name="TLA - Snap selected items to start of containing region.lua" type="script" desc="Snap selected items to start of containing region">
+      <version name="1.0" author="Loris Tessier" time="2025-12-08T15:49:26Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="main">https://github.com/Enigma-IX/Reaper-WorkflowScripts/raw/87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a/Regions%20Workflow/TLA%20-%20Snap%20selected%20items%20to%20start%20of%20containing%20region.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Tracks Workflow">
+    <reapack name="TLA - Create a Child Track to selected Track.lua" type="script" desc="Create a single child Track for selected Tracks">
+      <version name="1.0" author="Loris Tessier" time="2025-12-08T15:49:26Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="main">https://github.com/Enigma-IX/Reaper-WorkflowScripts/raw/87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a/Tracks%20Workflow/TLA%20-%20Create%20a%20Child%20Track%20to%20selected%20Track.lua</source>
+      </version>
+    </reapack>
+    <reapack name="TLA - Create a Parent Track for selected Tracks.lua" type="script" desc="Create a single parent Track for selected Tracks">
+      <version name="1.0" author="Loris Tessier" time="2025-12-08T15:49:26Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="main">https://github.com/Enigma-IX/Reaper-WorkflowScripts/raw/87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a/Tracks%20Workflow/TLA%20-%20Create%20a%20Parent%20Track%20for%20selected%20Tracks.lua</source>
+      </version>
+    </reapack>
+    <reapack name="TLA - Move and align selected items into subtracks.lua" type="script" desc="Move selected items into subtracks, aligned to first item's position per parent track">
+      <version name="1.0" author="Loris Tessier" time="2025-12-08T15:49:26Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="main">https://github.com/Enigma-IX/Reaper-WorkflowScripts/raw/87a2b5b4f3d101cd1e6c992491c563a8fd6e9d2a/Tracks%20Workflow/TLA%20-%20Move%20and%20align%20selected%20items%20into%20subtracks.lua</source>
+      </version>
+    </reapack>
+  </category>
+</index>
