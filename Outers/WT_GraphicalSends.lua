@@ -1,3 +1,71 @@
+--[[
+ * ReaScript Name: WT Graphical Sends
+ * Author: White Tie
+ * REAPER: 7.53
+ * Version: 1.0
+--]]
+ 
+--[[
+ * Changelog:
+ * 260201a
+  + Added 'WT_' to the name of the script, also to my skyscraper. [Thanks daniellumertz]
+  + Fix script failure when all tracks are deleted. [Thanks daniellumertz]
+
+ * 260201b
+  + Fix crash when loading a project with a saved selected track state [Thanks WarrenG]
+
+ * 260201c
+  + Fixed error in 260201b that broke mouse interactions [Thanks dahya]
+  + Fixed media track validation crash [Thanks dahya]
+
+ * 260202
+  + Added functionality for dragging over the cable/socket of a master/parent send to toggle the track's master/parent send state. Enable it with the new preferences entry; disabled by default.
+
+ * 260203
+  + If a cable runs off the top or the bottom of the screen, position the floating control in the middle of the visible bit [Thanks dahya]
+  + Clicking on a cable now summons the floating control, instead of waiting for a drag. [ref: Mercado_Negro]
+    Double clicking on a cable now resets its value to zero. [ref: NiVeK Night]
+
+ * 260204
+  + Fixed media track validation crash [Thanks atmosfar]
+  + Fixed image errors for 150% horizontal (braided) and 150% vertical (hollow) cables. [Thanks mykrobinson]
+  + New preference 'Mousewheel adjusts the send level of a cable', enabled by default. [ref: HLR_64]
+
+ * 260205
+  + Checks whether the user is running REAPER 7.53 or later, warns if not.
+  + Fixed receives to channel 3/4 from tracks above the selected track not being correctly styled. [Thanks gleebaz]
+
+ * 260207
+  + Added support for TCP pinned tracks [Thanks DandelionD]
+  + Rebuilt cable styling internal assignment and interaction in preferences (preparation for possible additional definitions).
+  + Added support for collapsed parents being fully hidden. [Thanks inthevoid]
+  + Added brightness preference for sccript background colour. [Ref LDT2]
+  + Fix HiDPI text padding.
+
+ * 260209
+  + Script can now ask REAPER if the arrange window tracks have scrolled vertically, even when the script does not have focus. Added preference control for the rate at which to do this.
+  + Bug fixes
+
+ * 260210
+  + Fix the visible envelope panels of pinned tracks not being included in the 'pinned area' behaviours. [Thanks scaramousche]
+  + Fix crash due to sends to/from hidden but not folder-ed tracks. [Thanks for WarrenG perseverance].
+
+ * 260211
+  + New cable styles : 'Faint' and 'Dashed'.
+  + Image for the socket of a selected track re-styled to better create the expectation that this will be the source of a cable.
+  + Fix track scoll detection breaking if the first visible track is pinned or hidden. [Thanks DandelionD]
+
+ * 260212
+  + Send and receive cables may now be styled differently if they are muted. Defaults to the new 'faint' cable style, colored red, custom color disabled, but you can fully assign all that in preferences. [Ref TCP786 et al.]
+
+ * 260214
+  + Cables now do the Reaper behaviour of alt-click to delete, shift click to mute. [Ref: everyone]
+  + Robustly prevent spurious appearances of the channel3/4 socket if the mouse rapidly moves away while the script is thinking about something else.
+  + Border added to styling preferences to clarify what preferences the cable category buttons relate to, plus some other styling niceties.
+  + Script version added to bottom of the preferences page. [Thanks LDT2]
+  + Keep track of the send/receive mute status in Reaper and update cables if it changes. [Thanks Warre+ ]
+--]]
+
 sTitle = "WT Graphical Sends"
 sVersion = "260214"
 
@@ -1210,9 +1278,8 @@ function El:sweepIndicatorKnob(props)
     startAngleOffs = props.startAngleOffs, endAngleOffs=props.endAngleOffs, value=props.value, valMin=props.valMin, valMax=props.valMax,
     col=props.colSweep, segmentUnlitCol=props.colBG }
   
-  local valueDependants = {{el = sweepIndicator}} -- a table of elements that should update when the readout has a new value (because double click)
-  local readout = nil
-  if props.readout then -- don't prvide readout props if you don't want a readout
+local valueDependants = {{el = sweepIndicator}} -- a table of elements that should     * when the readout has a new value (because double click)  local readout = nil
+  if props.readout then -- don't prvide readout props if you don't want a+ eadout
     readout = El:readout{parent=props.parent, x=props.readout.x, y=props.readout.y, w=props.readout.w, h=props.readout.h, flow=props.readout.flow, col = props.colBG, 
       value=props.value, valMin=props.valMin, valMax=props.valMax, decimals = props.decimals, units = props.readout.units,
       text={style=props.text.style, align=6, str=props.text.str, col=props.colSweep}, ignoreParentClippedHidden = props.ignoreParentClippedHidden }

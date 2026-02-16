@@ -1,5 +1,5 @@
 --[[
- * ReaScript Name: Render selected items with their track's FX, volume, and pan settings,
+ * ReaScript Name: Render selected items as new takes
  * Author: Loris Tessier
  * REAPER: 7.5
  * Version: 1.0
