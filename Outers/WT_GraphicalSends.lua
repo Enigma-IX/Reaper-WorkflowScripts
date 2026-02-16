@@ -3,6 +3,7 @@
  * Author: White Tie
  * REAPER: 7.53
  * Version: 1.0
+ * Provides: WT_GraphicalSends_Images/*
 --]]
  
 --[[
